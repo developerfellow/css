@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background: #cecece;
+            margin: 50px auto;
+            width: 300px;
+            font-size: 40px;
+            text-align: center;
+            height: 300px;
+            animation-name:myKeyframe;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            
+            
+            
+        }
+
+        @keyframes myKeyframe {
+         /* from{border-radius: 0%; background: #cecece;}
+         to {border-radius: 50%; background: tomato;} */
+         0%{border-radius: 0; background: #cecece;}
+         25%{border-radius: 5px; background: orange;}
+        50%{border-radius: 10px; background: orangered;}
+           75%{border-radius: 20px; background: yellowgreen;}
+           100%{border-radius: 25px; background: tomato;}
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        My Animation
+    </div>
+</body>
+</html>

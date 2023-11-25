@@ -1,0 +1,45 @@
+
+
+/* declaring global variables */
+@color-primary:orange;
+@color-secondary:slateblue;
+@color-tertiary:royalblue;
+
+/*  Fonts variables  */
+@font-lg:40px;
+@font-md:30px;  
+@font-sm:20px;
+
+.nav{
+    background-color: @color-primary;
+   ul li {
+    list-style-type: none;
+   
+   }
+   a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+}
+
+.heading(@my-color) {
+    color: @my-color;
+    font-size: @font-lg;
+    background-color: @color-secondary;
+    text-align: center;
+}
+
+/* h1 {
+    &:extend(.heading);
+    font-style: italic;
+ } */
+ h1{
+    .heading(green);
+ }
+
+
+
+
+  

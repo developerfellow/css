@@ -1,0 +1,26 @@
+/* declaring global variables */
+/*  Fonts variables  */
+.nav {
+  background-color: orange; }
+  .nav ul li {
+    list-style-type: none; }
+  .nav a {
+    text-decoration: none; }
+    .nav a:hover {
+      text-decoration: underline; }
+
+.heading, h1, .footer h3 {
+  color: orange;
+  font-size: 40px;
+  background-color: slateblue;
+  text-align: center; }
+
+h1:hover, .footer h3:hover {
+  background: green; }
+
+.footer h3 {
+  font-weight: bold; }
+
+.footer h3 {
+  font-style: italic;
+  border: 3px solid blue; }

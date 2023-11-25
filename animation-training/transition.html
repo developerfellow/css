@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: tomato;
+            margin: 100px auto;
+            text-align: center;
+            transform-origin: center center;
+             /* transform: rotateY(250deg); */
+            /* transform: skew(30deg,40deg); */
+            /* transform: scale(3,2); */
+            transition:transform(0px,0px) scaleX(1) scaleY(1) skew(0deg,0deg);
+            transition-duration: 5s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s;
+           
+           
+        }
+
+        div:hover{
+            transform: scaleX(3) scaleY(2) skew(30deg,40deg) translate(50px,-40px);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        CSS 2D Demo
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            width: 100%;
+            margin:  0 auto;
+        }
+
+        .wrapper header {
+            width: 100%;
+            background-color: red;
+            text-align: center;
+            height: 100px;
+        }
+        nav{
+            background-color: #333;
+        }
+        nav li {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+            display: block;
+            color: #fff;
+            padding: 5px;
+        }
+
+        nav a:hover {
+            color: #555;
+            text-decoration: underline;
+        }
+
+        nav ul{
+            display: flex;
+            /* justify-content:space-evenly; */
+        }
+
+        nav li {
+           flex-grow: 1;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            min-height: 400px;
+           /*  justify-content: space-evenly; */
+            flex-wrap: wrap;
+            
+
+        }
+        .left{
+            background-color: green;
+           width:300px;
+           
+            
+        }
+
+        .center{
+            background-color: khaki;
+            width: 300px;
+            
+        }
+
+        .right{
+            background-color: orangered;
+            width:300px;
+            
+          
+        }
+
+        .footer{
+            width: 100%;
+            background: slateblue;
+            height: 50px;
+        }
+
+        .footer h2 {
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>This is Header</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Testimonials</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+              <div class="left">1</div>
+              <div class="center">2</div>
+              <div class="right">3</div>
+        </div>
+        <div class="footer">
+            <h2>This is the footer</h2>
+        </div>
+    </div>
+</body>
+</html>
